@@ -1,0 +1,46 @@
+/* assets/css/admin.css */
+
+.game-showcase-metabox {
+    padding: 15px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.metabox-row {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.metabox-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+    font-size: 13px;
+}
+
+.metabox-row input,
+.metabox-row select {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.metabox-row input:focus,
+.metabox-row select:focus {
+    outline: none;
+    border-color: #6c5ce7;
+    box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+}
+
+.metabox-row input[type="text"],
+.metabox-row input[type="number"],
+.metabox-row input[type="url"],
+.metabox-row select {
+    width: 100%;
+    max-width: 400px;
+}

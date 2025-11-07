@@ -1,0 +1,228 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║         GAME SHOWCASE WORDPRESS PLUGIN - QUICK REFERENCE CARD             ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+🎯 INSTALLATION IN 3 STEPS:
+
+STEP 1: Download & Extract
+├─ Download: game-showcase-plugin.zip
+├─ Extract to: wp-content/plugins/
+└─ Folder will be: wp-content/plugins/game-showcase/
+
+STEP 2: Activate
+├─ Go to: WordPress Dashboard → Plugins
+├─ Find: "Game Showcase"
+└─ Click: Activate
+
+STEP 3: Use
+├─ Create/Edit Page
+├─ Add: [game_showcase]
+└─ Publish
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📚 DOCUMENTATION ORDER:
+
+First:  00_START_HERE.txt (2 min read)
+Then:   INSTALLATION_GUIDE.md (5 min setup)
+Next:   PLUGIN_OVERVIEW.md (learn features)
+Deep:   VISUAL_GUIDE.md (see examples)
+Full:   README.md (complete reference)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎮 ADD YOUR FIRST GAME:
+
+1. Dashboard → Games → Add New
+2. Title: Enter game name
+3. Description: Write about the game
+4. Featured Image: Upload game artwork
+5. Scroll down to "Game Details" metabox
+6. Fill in:
+   • Developer: Studio name
+   • Genres: Action, RPG, etc.
+   • Rating: 0-5 stars
+   • Price: $59.99
+   • Sale Price: (optional) $39.99
+   • Buy Link: https://buy-here.com
+   • Status: Available
+7. Assign Categories: Check Action, RPG, etc.
+8. Publish
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📝 COMMON SHORTCODES:
+
+Default (Carousel):
+[game_showcase]
+
+Grid View:
+[game_showcase view="grid"]
+
+By Category:
+[game_showcase category="action"]
+
+Limited Items:
+[game_showcase limit="8"]
+
+Combined:
+[game_showcase category="action" view="grid" limit="12"]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎨 CUSTOMIZE COLORS:
+
+Edit: assets/css/style.css
+
+Look for:
+:root {
+    --primary-color: #6c5ce7;    /* Change this */
+    --secondary-color: #00b894;
+    --dark-bg: #0d0d0d;
+    --card-bg: #1a1a1a;
+    --text-primary: #ffffff;
+    --accent: #ff6b6b;
+}
+
+═══════════════════════════════════════════════════════════════════════════════
+
+⚙️ PLUGIN SETTINGS:
+
+Go to: Games → Settings
+
+Options:
+• Items Per Page: 12
+• Items in Carousel: 4
+• Enable Autoplay: ✓
+• Show Dots: ✓
+• Show Arrows: ✓
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📱 RESPONSIVE DESIGN:
+
+Desktop (1024px+):  4 items in carousel
+Tablet (768px):     2-3 items in carousel
+Mobile (480px):     1 item in carousel
+
+All automatically responsive - no config needed!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔍 GAME DETAILS EXPLAINED:
+
+Title              → Game name (e.g., "The Witcher 3")
+Description        → Full game details
+Developer          → Studio name (e.g., "CD Projekt Red")
+Genres             → Types (e.g., "Action, RPG, Adventure")
+Rating             → Stars (0-5, e.g., 4.9)
+Price              → Regular price (e.g., "$59.99")
+Sale Price         → Discount price (e.g., "$39.99")
+Buy Link           → Where to purchase (e.g., URL)
+Status             → Available / Coming Soon / Popular / New
+Categories         → Filter tags (e.g., Action, RPG)
+Featured Image     → Game artwork/screenshot
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✨ WHAT VISITORS SEE:
+
+[Game Card]
+├─ Game image with hover effect
+├─ Status badge (color-coded)
+├─ Star rating ⭐
+├─ Game title
+├─ Developer name
+├─ Category tags
+├─ Game description snippet
+├─ Regular price (crossed out if on sale)
+├─ Sale price (highlighted in red)
+└─ Buy Now button
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🐛 TROUBLESHOOTING:
+
+Games not showing?
+→ Make sure games are PUBLISHED
+→ Create at least ONE game
+→ Add page with shortcode [game_showcase]
+
+Carousel not animating?
+→ Clear browser cache (Ctrl+Shift+Delete)
+→ Check if jQuery is loaded
+→ Disable other plugins temporarily
+
+Images not showing?
+→ Set featured image for each game
+→ Check image file permissions
+→ Try re-uploading image
+
+Styling broken?
+→ Check if CSS file loaded
+→ Clear WordPress cache
+→ Disable cache plugins temporarily
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💡 BEST PRACTICES:
+
+✓ Use high-quality game images (1280x720px)
+✓ Write detailed descriptions
+✓ Set accurate ratings
+✓ Use consistent developer names
+✓ Create meaningful categories
+✓ Test on mobile before launch
+✓ Enable WordPress caching
+✓ Update buy links regularly
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 FILE LOCATIONS:
+
+Plugin File:         game-showcase.php
+Game Details Form:   includes/metabox.php
+Display Function:    includes/frontend.php
+Settings Page:       includes/admin.php
+Styling:             assets/css/style.css
+Carousel JS:         assets/js/script.js
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 NEXT STEPS:
+
+1. ✓ Extract game-showcase-plugin.zip
+2. ✓ Upload to wp-content/plugins/
+3. ✓ Activate in WordPress
+4. ✓ Create 5-10 test games
+5. ✓ Add shortcode to page
+6. ✓ Test on mobile
+7. ✓ Customize colors (optional)
+8. ✓ Configure settings
+9. ✓ Add real games
+10. ✓ Share with audience!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📞 HELP:
+
+Stuck? Check these files IN ORDER:
+1. 00_START_HERE.txt
+2. INSTALLATION_GUIDE.md
+3. PLUGIN_OVERVIEW.md
+4. README.md
+5. Code comments in plugin files
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎉 YOU'RE READY!
+
+Everything is set up and ready to go. Your game showcase will look amazing!
+
+Start with INSTALLATION_GUIDE.md → 5 minutes → Live!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Version: 1.0.0
+License: GPL v2+
+Ready: ✅ Production Ready
